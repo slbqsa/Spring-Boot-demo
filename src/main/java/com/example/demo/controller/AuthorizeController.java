@@ -17,11 +17,14 @@ public class AuthorizeController {
     public String callback(@RequestParam(name = "code")String code,
                            @RequestParam(name = "state")String state){
         AccessTokenDTO accessTokenDTO = new AccessTokenDTO();
-        accessTokenDTO.setCode(code);
+        accessTokenDTO.setClient_id("lv1.8aa52cefb3151283");
+        accessTokenDTO.setClient_secret("64f46741c0bf8d5da9bb59be1b393dc418f7ff5");
         accessTokenDTO.setRedirect_uri("http://localhost:8080/callback");
-        accessTokenDTO.setClient_secret("64f4674e1c0bf8d5da9bb59be1b393dc418f7ff5");
-        accessTokenDTO.setClient_id("Iv1.8aa52cefb3151283");
+        accessTokenDTO.setCode(code);
+        accessTokenDTO.setState(state);
         githubProvider.getAccessToken(accessTokenDTO);
+
+
         return "index";
     }
 }
