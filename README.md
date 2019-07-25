@@ -2,7 +2,9 @@
 ## 通过一个小的项目练习Spring-Boot
 ## 资料
 [Maven](https://mvnrepository.com)
+<br>
 [Spring文档](https://spring.io/guides)
+
 [Spring外部文档](https://spring.io/guides/gs/serving-web-content/)
 [ES](https://elasticsearch.cn/explore)
 [MyBatis-Spring-Boot-Starter模块](http://www.mybatis.org/spring-boot-starter/mybatis-spring-boot-autoconfigure/index.html)
