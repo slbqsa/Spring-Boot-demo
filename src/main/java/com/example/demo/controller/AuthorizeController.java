@@ -20,9 +20,9 @@ import java.util.UUID;
 public class AuthorizeController {
     @Autowired
     private GithubProvider githubProvider;
-    @Value("${github.client.id}")
+    @Value("4f8c71a72347905cb78f")
     private String clientId;
-    @Value("${github.client.secret}")
+    @Value("c2995fd22e894399f1c734779189c60ab285958d")
     private String clientSecret;
     @Value("${github.redirect.uri}")
     private String redirectUri;
