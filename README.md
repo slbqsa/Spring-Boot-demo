@@ -11,7 +11,7 @@
 [Git](https://git-scm.com/download)
 # 新型UML画图工具
 [Visual Paradigm](https://www.visual-paradigm.com)<br>
-## 脚本
+## sql脚本
 ```sql
 create table user(
   id int AUTO_INCREMENT primary key not null ,
