@@ -12,8 +12,8 @@
 [Git](https://git-scm.com/download)
 [Flyway](https://flywaydb.org/grtstarted/firststeps/maven)
 # 新型UML画图工具
-[Visual Paradigm](https://www.visual-paradigm.com)
-##脚本
+[Visual Paradigm](https://www.visual-paradigm.com)<br>
+## sql脚本
 ```sql
 create table user(
   id int AUTO_INCREMENT primary key not null ,
