@@ -8,9 +8,9 @@
 [Spring官方文档](https://docs.spring.io/spring-boot/docs/2.0.0.RC1/reference/htmlsingle/#boot-features-embedded-database-support)<br>
 [ES](https://elasticsearch.cn/explore)<br>
 # 工具
-[Bootstrap](https://v3.bootcss.com)
-[Git](https://git-scm.com/download)
-[Flyway](https://flywaydb.org/grtstarted/firststeps/maven)
+[Bootstrap](https://v3.bootcss.com)<br>
+[Git](https://git-scm.com/download)<br>
+[Flyway](https://flywaydb.org/grtstarted/firststeps/maven)<br>
 # 新型UML画图工具
 [Visual Paradigm](https://www.visual-paradigm.com)<br>
 ## sql脚本
