@@ -22,9 +22,9 @@ import java.util.UUID;
 public class AuthorizeController {
     @Autowired
     private GithubProvider githubProvider;
-    @Value("4f8c71a72347905cb78f")
+    @Value("${github.client.id}")
     private String clientId;
-    @Value("c2995fd22e894399f1c734779189c60ab285958d")
+    @Value("${github.client.secret}")
     private String clientSecret;
     @Value("${github.redirect.uri}")
     private String redirectUri;
@@ -45,7 +45,7 @@ public class AuthorizeController {
         accessTokenDTO.setState(state);
        String accessToken = githubProvider.getAccessToken(accessTokenDTO);
        GithubUser githubUser = githubProvider.getUser(accessToken);
-        if(githubUser!= null)
+        if(githubUser!= null && githubUser.getId()!=null)
         {
             User user = new User();
             String token = UUID.randomUUID().toString();
