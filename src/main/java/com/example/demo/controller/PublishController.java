@@ -33,6 +33,18 @@ public class PublishController {
             @RequestParam("tag") String tag,
             HttpServletRequest request,
             Model model){
+        if(title== null && title==""){
+            model.addAttribute("error","标题不能为空");
+            return "publish";
+        }
+        if(description== null && description==""){
+            model.addAttribute("error","问题补充不能为空");
+            return "publish";
+        }
+        if(tag== null && tag==""){
+            model.addAttribute("error","标签不能为空");
+            return "publish";
+        }
 
         model.addAttribute("title",title);
         model.addAttribute("description",description);
